@@ -1,0 +1,8 @@
+{
+    "name": "@adamburgess/nr",
+    "version": "1.0.0",
+    "description": "A faster npm run",
+    "bin": {
+        "nr": "nr.sh"
+    }
+}
