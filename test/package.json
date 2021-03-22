@@ -1,0 +1,7 @@
+{
+    "scripts": {
+        "test": "echo test",
+        "colon:test": "echo colon",
+        "with space": "echo space"
+    }
+}

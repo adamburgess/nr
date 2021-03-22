@@ -1,0 +1,13 @@
+#!/bin/bash
+
+set -x
+set -e
+
+testOutput=$(../nr.sh test)
+test $testOutput = "test"
+colonOutput=$(../nr.sh colon:test)
+test $colonOutput = "colon"
+spaceOutput=$(../nr.sh "with space")
+test $spaceOutput = "space"
+
+echo all tests pass

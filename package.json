@@ -1,6 +1,6 @@
 {
     "name": "@adamburgess/nr",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "A faster npm run",
     "bin": {
         "nr": "nr.sh"
