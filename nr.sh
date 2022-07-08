@@ -22,8 +22,7 @@ find_package_json
 # Run the script. If jq succeeds then cmd will hold it
 if cmd=$(jq .scripts.\""$1"\" -r -e package.json); then
     # Add node_modules to path, and run the script + any arguments with bash
-    PATH=node_modules/.bin:$PATH 
-    $cmd "${@:2}"
+    PATH=node_modules/.bin:$PATH bash -c "$cmd ${@:2}"
 else
     >&2 echo "Script $1 not found"
     exit 1
