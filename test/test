@@ -9,5 +9,7 @@ colonOutput=$(../nr.sh colon:test)
 test $colonOutput = "colon"
 spaceOutput=$(../nr.sh "with space")
 test $spaceOutput = "space"
+spaceOutput=$(../nr.sh args "1 2" 3)
+test "$spaceOutput" = "1 2"
 
 echo all tests pass
